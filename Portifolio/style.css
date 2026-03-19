@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body{
+background:#81c0f7ea;
+color:#333;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background: #0F172A;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.hero img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #236cffea;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* ABOUT */
+.about {
+    padding: 50px;
+    text-align: center;
+}
+
+/* SKILLS */
+.skills {
+    padding: 50px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill {
+    background: #d8e7f6;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* PROJECTS */
+.projects {
+    padding: 50px;
+}
+
+.project-container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(249, 249, 251, 0);
+    padding: 15px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.card img {
+    width: 100%;
+    height: 50%;
+}
+
+/* CONTACT */
+.contact {
+    padding: 50px;
+    text-align: center;
+}
+
+form input, form textarea {
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0F172A;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
